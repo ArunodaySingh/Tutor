@@ -13,6 +13,9 @@ html {
 
 .font-size-13 {
   font-size: 13px; }
+  .ab :hover{
+    color:blue;
+  }
 
 .font-size-14 {
   font-size: 14px; }
@@ -258,7 +261,10 @@ h1, h2, h3, h4, h5,
 
 .line-height-1 {
   line-height: 1 !important; }
+.hover :hover{
+  color:red;
 
+}
 .bg-black {
   background: #000; }
 
