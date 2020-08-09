@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require('express');
 const bp=require('body-parser');
 const ejs=require('ejs');
@@ -7,7 +8,7 @@ app.use(bp.urlencoded({extended:true}));
 app.use(express.static(__dirname+'/public'));
 app.set('view engine','ejs');
 
-mongoose.connect("mongodb+srv://Arunoday:Arunoday@123@cluster0-u01rr.mongodb.net/codetilllogndb",{useNewUrlParser:true,useUnifiedTopology:true},function(err){
+mongoose.connect(process.env.link,{useNewUrlParser:true,useUnifiedTopology:true},function(err){
   if(!err){
     console.log(err);
   }
